@@ -1,12 +1,12 @@
 Summary:	Network hosts status monitor
 Summary(pl):	Monitor stanu komputerów w sieci
 Name:		wmping
-Version:	0.2
+Version:	0.2.1
 Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
-Source0:	http://cad.ntu-kpi.kiev.ua/~serg/projects/wm/%{name}-%{version}.tgz
-# Source0-md5:	b459862d49313fa9fbc92f42a42cce55
+Source0:	http://cad.ntu-kpi.kiev.ua/~serg/projects/wm/%{name}-%{version}.tar.gz
+# Source0-md5:	c8f3f501bc39389385558022f2a36f66
 Source1:	%{name}.desktop
 URL:		http://freshmeat.net/projects/wmping/
 BuildRequires:	XFree86-devel
@@ -49,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog NEWS README TODO
+%doc AUTHORS NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
 %{_applnkdir}/DockApplets/*
 %{_mandir}/man1/*
