@@ -1,8 +1,8 @@
 Summary:	Network hosts status monitor
-Summary(pl):	Monitor stanu hostów w sieci
+Summary(pl):	Monitor stanu komputerów w sieci
 Name:		wmping
 Version:	0.1
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://cad.ntu-kpi.kiev.ua/~serg/projects/wm/%{name}-%{version}.tgz
@@ -20,9 +20,9 @@ show "up" status for a host that is available and "down" status for a
 host that cannot be pinged.
 
 %description -l pl
-Wmping jest apletem, który sprawdza stan hostów w sieci. Pokazuje stan
-"w³±czony" dla hostów, które s± osi±galne i "wy³±czony" dla tych,
-które nie odpowiadaj± na pingi.
+Wmping jest apletem, który sprawdza stan komputerów w sieci. Pokazuje
+stan "w³±czony" dla komputerów, które s± osi±galne i "wy³±czony" dla
+tych, które nie odpowiadaj± na pingi.
 
 %prep
 %setup -q
@@ -37,9 +37,12 @@ które nie odpowiadaj± na pingi.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
+install -d $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 install %{name} $RPM_BUILD_ROOT%{_bindir}
 install %{name}.1 $RPM_BUILD_ROOT%{_mandir}/man1
+
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -48,4 +51,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
+%{_applnkdir}/DockApplets/*
 %{_mandir}/man1/*
