@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=WMPing
+Comment=Network hosts status monitor
+Comment[pl]=Monitor stanu komputeró w w sieci
+Exec=wmping
+Terminal=false
+Type=Application
+Encoding=UTF-8
+# vi: encoding=utf-8
+
+
