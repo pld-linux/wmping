@@ -1,5 +1,5 @@
 Summary:	Network hosts status monitor
-Summary(pl.UTF-8):   Monitor stanu komputerów w sieci
+Summary(pl.UTF-8):	Monitor stanu komputerów w sieci
 Name:		wmping
 Version:	0.2.1
 Release:	2
