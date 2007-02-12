@@ -1,5 +1,5 @@
 Summary:	Network hosts status monitor
-Summary(pl):	Monitor stanu komputerów w sieci
+Summary(pl.UTF-8):   Monitor stanu komputerÃ³w w sieci
 Name:		wmping
 Version:	0.2.1
 Release:	2
@@ -20,10 +20,10 @@ Wmping is a dockapp which checks the status of hosts in a network. It
 show "up" status for a host that is available and "down" status for a
 host that cannot be pinged.
 
-%description -l pl
-Wmping jest apletem, który sprawdza stan komputerów w sieci. Pokazuje
-stan "w³±czony" dla komputerów, które s± osi±galne i "wy³±czony" dla
-tych, które nie odpowiadaj± na pingi.
+%description -l pl.UTF-8
+Wmping jest apletem, ktÃ³ry sprawdza stan komputerÃ³w w sieci. Pokazuje
+stan "wÅ‚Ä…czony" dla komputerÃ³w, ktÃ³re sÄ… osiÄ…galne i "wyÅ‚Ä…czony" dla
+tych, ktÃ³re nie odpowiadajÄ… na pingi.
 
 %prep
 %setup -q
